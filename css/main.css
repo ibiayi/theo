@@ -1,0 +1,119 @@
+header {
+	text-align: center;
+}
+
+.container{
+	margin: 10px 20px;
+	overflow: hidden;
+}
+
+#toolbar{
+	border: 3px solid black;
+}
+
+#canvas {
+	z-index: 1;
+	border: 3px solid black;
+	display: block;
+	overflow: hidden;
+}
+
+
+#grid {
+	z-index: 0;
+	width: 600px;
+	height: 600px;
+	border: 2px solid black;
+}
+
+.grid-container {
+	z-index: 0;
+	position: absolute;
+	width: 600px;
+	height: 600px;
+}
+
+.horizontal-grid {
+	z-index: 0;
+	height: 100px;
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: 2px solid black;
+}
+.horizontal-grid:last-child {
+  border-bottom: none;
+}
+
+.vertical-grid {
+  min-height: 100%;
+  min-width: 100px;
+  box-sizing: border-box;
+  border-right: 2px solid black;
+  float: left;
+}
+.vertical-grid:last-child {
+  border-right: none;
+}
+
+.item{
+	z-index: 1;
+	border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*COLORS*/
+.blue{
+	background-color: blue;
+}
+
+.red{
+	background-color: red;
+}
+
+.yellow{
+	background-color: yellow;
+}
+
+.white{
+	background-color: #fff;
+}
+
+.black {
+	background-color: #000;
+}
+
+.grey{
+	background-color: #888;
+}
+
+/*SHAPES*/
+.small-square{
+	width: 100px;
+	height: 100px;
+}
+
+.med-square{
+	width: 200px;
+	height: 200px;
+}
+
+.large-square{
+	width: 300px;
+	height: 300px;
+}
+
+.small-rect-long{
+	width: 300px;
+	height: 50px;
+}
+
+.small-rect-tall{
+	width: 50px;
+	height: 300px;
+}
+
+.med-rect-tall{
+	width: 50px;
+	height: 400px;
+}
