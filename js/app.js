@@ -6,7 +6,7 @@ var randomColor = function() {
 }
 
 var randomShape = function() {
-	shape = ['small-square', 'med-square', 'large-square'];
+	shape = ['small-square', 'med-square', 'large-square', 'xlarge-square'];
 	return shape[Math.floor(Math.random()*shape.length)];
 }
 
@@ -17,23 +17,29 @@ function createDiv() {
 
 //Number of shapes to be created.
 
-//Add div to document.
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
-	$("#art").append(createDiv());
 
-//Packery
-var $container = $('#canvas');
-// init
-$container.packery({
-  itemSelector: '.item',
-  gutter: 0
+
+//Add divs to document when button clicked.
+$("#randomize").click(function() {
+	$("#art").empty();
+	$("#grid").css("visibility", "visible");
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	$("#art").append(createDiv());
+	//Packery
+	var $container = $('#canvas');
+	$container.packery('destroy');
+	$container.packery({
+		itemSelector: '.item',
+		gutter: 0
+	});
 });
+
