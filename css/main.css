@@ -25,6 +25,10 @@ body{
 	padding: 10px;
 }
 
+#toolbar p{
+	margin-bottom: 40px;
+}
+
 #randomize{
 	font-family: 'Questrial', sans-serif;
 	display: block;
