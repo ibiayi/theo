@@ -1,12 +1,12 @@
 
 //Create div with the class of a random color and shape.
 var randomColor = function() {
-	color = ['red', 'blue', 'yellow', 'black', 'white', 'grey'];
+	color = ['red', 'red', 'red', 'blue', 'blue', 'blue', 'yellow', 'yellow', 'yellow', 'black', 'black', 'grey', 'grey'];
 	return color[Math.floor(Math.random()*color.length)];
 }
 
 var randomShape = function() {
-	shape = ['small-square', 'med-square', 'large-square', 'xlarge-square'];
+	shape = ['small-square', 'med-square', 'large-square', 'large-square', 'xlarge-square'];
 	return shape[Math.floor(Math.random()*shape.length)];
 }
 
