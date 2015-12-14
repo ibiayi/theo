@@ -12,8 +12,10 @@
 	}
 
 	#canvas{
-		width: 90%;
-		height: 300px;
+		min-height: 300px;
+		max-height: 300px;
+		min-width: 300px;
+		max-width: 300px;
 	}
 
 
@@ -22,8 +24,22 @@
 
 /* iPads ----------- */
 @media screen and (min-width : 768px) {
+	#toolbar, #canvas {
+		display: block;
+		margin: 10px auto;
+	}
 
+	#toolbar{
+		width: 90%;
+		margin-bottom: 15px;
+	}
 
+	#canvas{
+			min-height: 600px;
+			max-height: 600px;
+			min-width: 600px;
+			max-width: 600px;
+	}
 }
 
 
