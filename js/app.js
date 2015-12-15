@@ -1,7 +1,7 @@
 
 //Create div with the class of a random color and shape.
 var randomColor = function() {
-	color = ['red', 'blue', 'yellow', 'black', 'grey', 'grey'];
+	color = ['red', 'blue', 'yellow', 'black', 'grey'];
 	return color[Math.floor(Math.random()*color.length)];
 }
 
@@ -14,7 +14,6 @@ function createDiv() {
 	var div = '<div class="item '+ randomColor() + ' ' + randomShape() + '"></div>';
 	return div;
 }
-
 
 //Add divs to document when button clicked.
 $("#randomize").click(function() {
@@ -44,4 +43,5 @@ $("#randomize").click(function() {
 		gutter: 0
 	});
 });
+
 
