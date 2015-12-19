@@ -39,15 +39,23 @@ body{
 	background: #fff;
 }
 
+/* GUI TOOLBAR */
+
+#gui-container{
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+
+/* CANVAS */
+
 #canvas {
 	z-index: 1;
 	border: 3px solid black;
 	display: block;
 	overflow: hidden;
 }
-
-
-/* CANVAS */
 
 #grid {
 	visibility: hidden;
