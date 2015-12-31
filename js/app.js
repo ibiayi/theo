@@ -16,7 +16,6 @@ var createDiv = function() {
 };
 
 //Create x number of divs.
-//var numberOfDivs = parseInt(prompt('How many divs should be created?'));
 
 var divBlock = function(){
 	var i = 0;
@@ -35,7 +34,7 @@ var settings = new Settings();
 
 window.onload=function(){
 	var gui = new dat.GUI({autoPlace: false});
-	gui.add(settings, 'numberOfDivs', 0, 15);
+	gui.add(settings, 'numberOfDivs', 12, 36);
 	$("#gui-container").append(gui.domElement);
 };
 
