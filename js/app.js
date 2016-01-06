@@ -15,8 +15,8 @@ var createDiv = function() {
 	return div;
 };
 
-//Create x number of divs.
 
+//Create x number of divs.
 var divBlock = function(){
 	var i = 0;
 	while (i < Math.round(settings.numberOfDivs)){
@@ -24,6 +24,7 @@ var divBlock = function(){
 		i = i+1;
 	}
 };
+
 
 //dat.gui toolbar
 var Settings = function(){
@@ -39,9 +40,6 @@ window.onload=function(){
 };
 
 
-
-
-
 //Add divs to document when button clicked.
 $("#randomize").click(function() {
 	$("#art").empty();
@@ -55,5 +53,7 @@ $("#randomize").click(function() {
 		gutter: 0
 	});
 });
+
+
 
 
